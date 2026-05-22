@@ -25,3 +25,8 @@ Installa la libreria MQTT necessaria tramite pip:
 
 ```bash
 pip install paho-mqtt
+```
+### Avvio del progetto
+* 1. Avvio del motore di gioco (`tombola.py`) e iscrizione dei giocatori
+  2. Avvio di tutti i subscriber per i relativi topic (`ambo.py`, `terna.py`, `quaterna.py`, `cinquina.py`, `vittoria.py`)
+  3. Avvio dell'estrattore (`pub_numbers.py`)
