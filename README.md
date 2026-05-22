@@ -1,10 +1,10 @@
-## Tombola MQTT
+# Tombola MQTT
 
 Un'implementazione del gioco della Tombola, sviluppata in Python utilizzando il protocollo di messaggistica MQTT. 
 
 Il progetto sfrutta il pattern Publish/Subscribe per separare la logica di estrazione dei numeri e la notifica degli eventi di vittoria (ambo, terna, ecc.).
 
-# Architettura del Progetto
+## Architettura del Progetto
 
 Il sistema è composto da diversi script che interagiscono tra loro tramite un broker MQTT:
 
@@ -13,7 +13,7 @@ Il sistema è composto da diversi script che interagiscono tra loro tramite un b
 * **I visualizzatori degli eventi**: Script singoli (`ambo.py`, `terna.py`, `quaterna.py`, `cinquina.py`, `vittoria.py`) che restano in ascolto sui rispettivi topic e notificano a schermo quando un giocatore raggiunge quel traguardo.
 * **Display Numeri (`sub.py`)**: Un semplice client in ascolto delle estrazioni che mostra a schermo i numeri man mano che vengono chiamati dall'estrattore.
 
-# Requisiti di Sistema
+## Requisiti di Sistema
 
 * Python 3.x
 * Libreria `paho-mqtt`
